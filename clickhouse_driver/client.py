@@ -814,4 +814,5 @@ class Client(object):
     def close(self) -> bool:
         """Close connect crack."""
 
+        self.disconnect()
         return True
