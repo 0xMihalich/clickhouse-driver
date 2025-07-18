@@ -810,3 +810,8 @@ class Client(object):
         host, kwargs = parse_url(url)
 
         return cls(host, **kwargs)
+
+    def close(self) -> bool:
+        """Close connect crack."""
+
+        return True
